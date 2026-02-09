@@ -1,0 +1,50 @@
+baseURL = "https://jasonatoms.com/"
+languageCode = "en-us"
+title = "Jason Atoms"
+theme = "PaperMod"
+[pagination]
+  pagerSize = 10
+
+[params]
+  env = "production"
+  defaultTheme = "dark"
+  showReadingTime = true
+  showShareButtons = false
+  showPostNavLinks = true
+  showBreadCrumbs = true
+  showCodeCopyButtons = true
+  showToc = true
+  description = "Personal blog, life, philosophy, projects"
+  author = "Jason Adams"
+
+  [params.homeInfoParams]
+    Title = "Jason Atoms"
+    Content = "The person behind the projects. Casual, honest, wide-ranging."
+
+  [params.profileMode]
+    enabled = false
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[markup]
+  [markup.highlight]
+    style = "monokai"
+    lineNos = false
+
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts/"
+    weight = 10
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+    weight = 20
+  [[menu.main]]
+    identifier = "search"
+    name = "Search"
+    url = "/search/"
+    weight = 30
